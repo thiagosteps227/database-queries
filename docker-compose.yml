@@ -3,10 +3,10 @@ version: "3.7"
 services:
     database:
         image: postgres
-        container_name: queries_challenge
+        container_name: database-queries
         restart: always
         ports:
-            - 5434:5432
+            - 5432:5432
         environment: 
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=docker
